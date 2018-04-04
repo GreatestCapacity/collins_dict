@@ -6,6 +6,7 @@ Collins Dictionary in Terminal (Containing both Chinese and English explanation)
 It is just a web scraper, and the information is scraped from iciba.com.  
 The reason to choose Collins Dictionary is that Collins Dictionary contains both Chinese and English exlanation and the English explanation is very easy to understand. Furthermore, it includes some good example sentences.  
 The reason to write this script is that I often work in CLI mode or GUI mode with IDEs containing a Terminal tab. It's more convient to use the dictionary in your work window than to frequently switch windows to a browser or client.  
+  
 这只是一个网页爬虫而已，数据爬取自金山词霸的网站。  
 之所以选择柯林斯，主要是因为柯林斯对单词的解释比较全面，既有中文释义，又有英文释义，而且英文释义还非常生动易懂。此外还有一些很好的例句。  
 之所以写这个脚本，主要是因为我经常在纯文本模式下工作，或者使用的IDE有终端标签页。使用命令行下的词典，总比频繁地切窗口到浏览器或客户端方便。  
