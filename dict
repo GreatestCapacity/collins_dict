@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/opt/anaconda3/bin/python
 
 import functools
 import collins_scrap
@@ -9,11 +9,13 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         word = str(functools.reduce(lambda x, y: x + ' ' + y, sys.argv[1:]))
         print(word)
-        for line in collins_scrap.query(word):
+        ret = collins_scrap.query(word)
+        if len(ret) == 0:
+            print('\033[1;31m *** No result *** \033[0m')
+        for line in ret:
             if line.isdigit():
                 print('\033[1;31m' + line + '\033[0m')
             else:
                 print(line)
     else:
         print('Usage: dict WORD/PHRASE')
-
