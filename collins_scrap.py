@@ -14,5 +14,5 @@ def query(word):
     lst = []
     for part in content.children:
         content = re.sub(r'<.*?>', '', str(part))
-        lst += list(filter(lambda x: len(x) != 0, content.split('\n')))
+        lst += list(filter(lambda x: len(x.strip()) != 0, content.split('\n')))
     return lst
