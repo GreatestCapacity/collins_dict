@@ -1,4 +1,4 @@
-#!/opt/anaconda3/bin/python
+#!/usr/bin/python
 
 import functools
 import collins_scrap
