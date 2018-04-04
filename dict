@@ -1,0 +1,19 @@
+#!/usr/bin/python
+
+import functools
+import collins_scrap
+import sys
+
+
+if __name__ == '__main__':
+    if len(sys.argv) > 1:
+        word = str(functools.reduce(lambda x, y: x + ' ' + y, sys.argv[1:]))
+        print(word)
+        for line in collins_scrap.query(word):
+            if line.isdigit():
+                print('\033[1;31m' + line + '\033[0m')
+            else:
+                print(line)
+    else:
+        print('Usage: dict WORD/PHRASE')
+
