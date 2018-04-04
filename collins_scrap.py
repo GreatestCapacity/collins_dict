@@ -10,7 +10,9 @@ def query(word):
     word.replace(' ', '%20')
     html = urlopen(query_url + word)
     bsObj = BeautifulSoup(html.read(), 'html.parser')
-    content = bsObj.select('div.collins-section')[0]
+    content = bsObj.select_one('div.collins-section')
+    if content is None:
+        return []
     lst = []
     for part in content.children:
         content = re.sub(r'<.*?>', '', str(part))
