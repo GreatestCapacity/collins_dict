@@ -7,7 +7,7 @@ import sys
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        word = str(functools.reduce(lambda x, y: x + ' ' + y, sys.argv[1:]))
+        word = ' '.join(sys.argv[1:])
         print(word)
         ret = collins_scrap.query(word)
         if len(ret) == 0:
