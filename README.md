@@ -17,14 +17,14 @@ The reason to write this script is that I often work in CLI mode or GUI mode wit
 之所以写这个脚本，主要是因为我经常在纯文本模式下工作，或者使用的IDE有终端标签页。使用命令行下的词典，总比频繁地切窗口到浏览器或客户端方便。
 
 ## How to Use
-Please install Python3 first. Then, Add the directory containing the two files (dict and collins_scrap.py) to your Environment variable PATH.
+Please install Python3 first. Then, Add the directory containing the two files (`dict` and `collins_scrap.py`) to your Environment variable `PATH`.
 
-Edit ~/.bashrc file and add export PATH in the file then "source ~/.bashrc".
+Edit `~/.bashrc` file and add `export PATH` in the file then `source ~/.bashrc`.
 
-The script has just one parameter, such as "dict word". If you want to search a phrase such as "pick up", just type "dict pick up".
+The script has just one parameter, such as `dict word`. If you want to search a phrase such as `pick up`, just type `dict pick up`.
 
-请先安装Python3。之后，将那两个文件（dict与collins_scrap.py）所在的目录添加到你的PATH环境变量中。
+请先安装Python3。之后，将那两个文件（`dict`与`collins_scrap.py`）所在的目录添加到你的`PATH`环境变量中。
 
-编辑~/.bashrc文件，并将export PATH添加进去，然后执行“source ~/.bashrc”便可。
+编辑`~/.bashrc`文件，并将`export PATH`添加进去，然后执行`source ~/.bashrc`便可。
 
-本脚本只接受一个参数，例如“dict word”。如果你想查询一个短语，例如“pick up”，直接输入“dict pick up”就可以了。
+本脚本只接受一个参数，例如`dict word`。如果你想查询一个短语，例如`pick up`，直接输入`dict pick up`就可以了。
