@@ -12,8 +12,8 @@ def query(word):
     bsObj = BeautifulSoup(html.read(), 'html.parser')
     content = bsObj.select_one('div.collins-section')
     if content is None:
-        return []
-    lst = []
+        return list()
+    lst = list()
     for part in content.children:
         content = re.sub(r'<.*?>', '', str(part))
         lst += list(filter(lambda x: len(x.strip()) != 0, content.split('\n')))
